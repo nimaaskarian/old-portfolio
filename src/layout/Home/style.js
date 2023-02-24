@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledHome = styled.div`
-  height: 100vh;
+position: relative;
+  flex:1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,7 @@ export const StyledHome = styled.div`
 
 export const Header = styled.h1`
   font-family: poppins;
-  font-size: 65px;
+  font-size: 3.5em;
   margin: 0;
   font-weight: 700;
   text-align: center;
@@ -19,8 +20,8 @@ export const Header = styled.h1`
 export const TypewriterWrapper = styled.h3`
   margin: 0;
   padding: 0;
-  text-align: center;
-  font-size: 30px;
+  text-align: left;
+  font-size: 1.5em;
   font-family: raleway;
   & > * {
     display: inline-block;
@@ -43,9 +44,7 @@ export const SocialMediaLink = styled.a`
 
 export const SocialMediaLinks = styled.div`
   position: absolute;
-  height: 100vh;
-  left: 0;
-  padding: 60px;
+  left: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +54,7 @@ export const SocialMediaLinks = styled.div`
       flex-direction: row;
       bottom: 0;
       height: initial;
-      width: 100vw;
+      width: 100%;
     }
   }
 `;

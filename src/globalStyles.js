@@ -4,8 +4,11 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
   body {
-    background-color:${(props) => props.theme.bg};
+    box-sizing: border-box;
   }
+  body,html{
+    min-height: 100%;
+  } 
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -24,10 +27,11 @@ const GlobalStyle = createGlobalStyle`
 
   *{
     color: ${(props) => props.theme.primary};
+    transition: ease 0.4s color, ease 0.4s background-color;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    user-select: none;
+    // user-select: none;
   }
 
   a{

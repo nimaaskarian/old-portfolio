@@ -1,42 +1,47 @@
 import { Article } from "components/Article";
-import Colored from "components/Colored";
+import Url from "components/Url";
 import Container from "components/Container";
 import { Header, MainHeaderWrapper } from "components/Header";
 import React from "react";
 import ProgressBar from "./components/ProgressBar";
 import { SkillsWrapper } from "./style";
+import Colored from "components/Colored";
 
 const About = () => {
   return (
     <Container>
       <div>
         <MainHeaderWrapper>
-          <h1>
-            About <Colored>Me</Colored>
-          </h1>
-          <Colored>Who</Colored> am I?
+          <Colored>
+            <h1>
+              About Me
+            </h1>
+          </Colored>
+          Who am I?
         </MainHeaderWrapper>
       </div>
       <Header>
-        An <Colored>young</Colored> and <Colored>creative</Colored> Front-End
+        A young and creative Front-End
         Developer
       </Header>
       <Article first>
-        I'm <Colored>Nima Askarian.</Colored> A 18 year old Front-End developer
-        from Iran<Colored>,</Colored> Tehran<Colored>.</Colored> I started my
-        programming journey about 6 years ago<Colored>.</Colored>
+        I'm Nima Askarian. A 18 year old Front-End developer
+        from Iran, Tehran. I started my programming journey about 6 years ago.
+        I'm intersted in computers, algorithms, mathematics open-source and
+        free software, and of course, Front-End Development.
       </Article>
       <Article>
+        I'm always eager to learn new things. I love being challenged and in the process, 
+        learning something new.
         I've been studying and working as a Front-End Developer for almost 4
-        years<Colored>. </Colored>
-        In this few years, I acquired the <Colored>skills</Colored> to design
-        and build Front-End applications for modern web<Colored> .</Colored>
+        years. In this few years, I acquired some of the skills to design
+        and build Front-End applications for modern web.
       </Article>
       <Article>
-        I've come from a relatively long journey that taught me how to always
-        build a<Colored> unique</Colored> piece of software
-        <Colored>.</Colored> I will be glad to get a chance to build one for
-        <Colored> you.</Colored>
+        I've come from a relatively long journey that taught me how to try to
+        build a unique piece of software. I'm also trying my best to contribute to open-source community. Even the sources of this
+        portfolio itself is available for you to see! You can check this portfolio and my other work out on <Url href="https://github.com">Github</Url> if you're interested.
+        I will be glad to get a chance to build one for you.
       </Article>
       <Header>Skills</Header>
       <SkillsWrapper>

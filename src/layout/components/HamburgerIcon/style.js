@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHamburgerButton = styled.div`
+export const StyledHamburgerButton = styled.a`
   cursor: pointer;
   position: fixed;
   z-index: 4;

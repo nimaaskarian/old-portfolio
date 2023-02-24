@@ -88,7 +88,7 @@ export const StyledNavigationButton = styled(Link)`
   font-family: poppins;
   opacity: ${(props) => (props.enabled ? "1" : "0.55")};
   transition: all 0.6s ease;
-  font-size: 30px;
+  font-size: 2.25em;
   &:hover {
     opacity: 1;
   }

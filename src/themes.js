@@ -4,6 +4,19 @@ export const defaultLight = {
   bgSecondary: "#eee",
   secondary: "#c70039",
 };
+ 
+export const nordLight = {
+  primary: "#2E3440",
+  bg: "#ECEFF4",
+  bgSecondary: "#D8DEE9",
+  secondary: "#5E81AC",
+};
+export const nordDark = {
+  primary: "#ECEFF4",
+  bg: "#3B4252",
+  bgSecondary: "#2E3440",
+  secondary: "#88C0D0",
+};
 
 export const defaultDark = {
   bg: "#111",
@@ -14,8 +27,8 @@ export const defaultDark = {
 
 export const tealLight = {
   primary: "#222",
-  bg: "#e5f5e5",
-  bgSecondary: "#eefeee",
+  bg: "#eefeek",
+  bgSecondary: "#e5f5e5",
   secondary: "#63d4bd",
 };
 

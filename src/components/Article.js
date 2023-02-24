@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Article = styled.article`
   text-align: justify;
-  & {
-    margin-top: ${({ first }) => (first ? "20px" : "5px")};
-  }
+  font-size: 1em;
+  margin-bottom: 5px;
 `;
