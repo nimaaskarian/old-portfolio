@@ -1,12 +1,11 @@
 import React from "react";
-import { HamburgerLine, StyledHamburgerButton } from "./style";
+import { StyledHamburgerButton } from "./style";
+import { ReactComponent as Bars } from "assets/svg/bars.svg";
 
 const HamburgerButton = ({ onClick }) => {
   return (
     <StyledHamburgerButton onClick={onClick}>
-      <HamburgerLine initialWidth="100%" />
-      <HamburgerLine initialWidth="60%" />
-      <HamburgerLine initialWidth="80%" />
+      <Bars/>
     </StyledHamburgerButton>
   );
 };

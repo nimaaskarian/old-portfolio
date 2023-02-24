@@ -3,13 +3,14 @@ import styled from "styled-components"
 export const MainWrapper = styled.div`
   background-color:${(props) => props.theme.bgSecondary};
     padding: 60px;
+  padding-top: 0 !important;
     height: 100%;
     min-height:100vh;
     display: flex;
     flex-direction: column;
   @media only screen and (max-width: 768px) {
-& {
-    padding: 20px;
+    & {
+      padding: 20px;
     }
   }
 `

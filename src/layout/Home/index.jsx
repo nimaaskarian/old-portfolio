@@ -11,6 +11,7 @@ import {
   StyledHome,
   TypewriterWrapper,
 } from "./style";
+import Logo from "components/Logo";
 
 const Home = (Home) => {
   return (
@@ -39,6 +40,7 @@ const Home = (Home) => {
       </SocialMediaLinks>
       <div>
         <Header>
+          {/* <Logo size={.75} margin={{right:20}}/> */}
           Nima Askarian
         </Header>
         <TypewriterWrapper>

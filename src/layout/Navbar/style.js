@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
-export const StyledMenu = styled.nav`
+export const StyledNav = styled.nav`
+padding: 20px 0;
+padding-top: 60px;
+@media only screen and (max-width: 768px) {
+  & {
+    padding-top: 20px;
+  }
+}
 display: flex;
 gap: 12px;
 justify-content: end;
@@ -11,8 +18,30 @@ z-index: 1000;
 background-color: ${(props)=>props.theme.bgSecondary};
 `
 
+export const StyledMenu = styled.nav`
+  transition: height ease 0.5s, background-color ease .4s;
+  overflow: hidden;
+  & > *{
+    text-align: center;
+  }
+  gap: 20px;
+  height: 0;
+  height: ${(props)=>props.enabled && "calc(100vh - 70px)"};
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width:100%;
+  top: 100%;
+  z-index: 1000;
+  background-color: ${(props)=>props.theme.bgSecondary};
+  @media only screen and (min-width: 769px) {
+    & {
+      display: none;
+    }
+  }
+`
+
 export const DarkModeButton = styled.a`
-margin: 20px 0;
 cursor: pointer;
 & > svg{
   fill: ${(props)=>props.theme.primary};
@@ -25,16 +54,21 @@ cursor: pointer;
   }`
 
 export const StyledNavigationButton = styled(Link)`
-  margin: 20px 0;
   font-family: raleway;
   opacity: ${(props) => (props.enabled ? "1" : "0.55")};
   transition: opacity 0.6s ease;
   font-size: 1.5em;
   &:hover {
     opacity: 1;
-
+  }
+  @media only screen and (max-width: 768px) {
+    & {
+      display: ${(props)=>!props.isHome&&"none"};
+    }
 
   }`
-export const HomeNav = styled(StyledNavigationButton)`
+export const HomeWrapper = styled.span`
+display: flex;
+gap: 8px;
 margin-right:auto;
 `

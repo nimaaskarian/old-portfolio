@@ -20,7 +20,7 @@ export const Header = styled.h1`
 export const TypewriterWrapper = styled.h3`
   margin: 0;
   padding: 0;
-  text-align: left;
+  text-align: center;
   font-size: 1.5em;
   font-family: raleway;
   & > * {

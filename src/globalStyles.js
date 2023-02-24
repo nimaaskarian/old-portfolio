@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     box-sizing: border-box;
+    overflow: ${(props)=>props.isMenu && "hidden"};
   }
   body,html{
     min-height: 100%;

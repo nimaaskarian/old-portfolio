@@ -5,17 +5,21 @@ export const defaultLight = {
   secondary: "#c70039",
 };
  
-export const nordLight = {
-  primary: "#2E3440",
-  bg: "#ECEFF4",
-  bgSecondary: "#D8DEE9",
-  secondary: "#5E81AC",
-};
-export const nordDark = {
-  primary: "#ECEFF4",
-  bg: "#3B4252",
-  bgSecondary: "#2E3440",
-  secondary: "#88C0D0",
+export const nord = {
+
+  light: {
+    primary: "#2E3440",
+    bg: "#ECEFF4",
+    bgSecondary: "#D8DEE9",
+    secondary: "#5E81AC",
+  },
+  dark: {
+    primary: "#ECEFF4",
+    bg: "#3B4252",
+    bgSecondary: "#2E3440",
+    secondary: "#88C0D0",
+
+  }
 };
 
 export const defaultDark = {
