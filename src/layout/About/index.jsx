@@ -45,7 +45,7 @@ const About = () => {
       </Article>
       <Header>Skills</Header>
       <SkillsWrapper>
-        <ProgressBar title="HTML5/CSS3" progressPercentage={95} />
+        <ProgressBar title="HTML/CSS" progressPercentage={95} />
         <ProgressBar title="JavaScript (ES5-ES8)" progressPercentage={90} />
         <ProgressBar title="React" progressPercentage={85} />
         <ProgressBar
@@ -54,9 +54,12 @@ const About = () => {
         />
         <ProgressBar title="Adobe PS" progressPercentage={83} />
         <ProgressBar title="MUI" progressPercentage={75} />
-        <ProgressBar title="Semantic UI" progressPercentage={68} />
+        <ProgressBar title="Semantic UI/UI Toolkit" progressPercentage={68} />
         <ProgressBar title="Bootstrap 4/5" progressPercentage={68} />
+        <ProgressBar title="Next" progressPercentage={65} />
         <ProgressBar title="jQuery" progressPercentage={65} />
+        <ProgressBar title="Basic GNU/Linux Adminstration" progressPercentage={45} />
+        <ProgressBar title="C/C++" progressPercentage={35} />
       </SkillsWrapper>
     </Container>
   );

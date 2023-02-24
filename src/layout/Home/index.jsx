@@ -11,7 +11,6 @@ import {
   StyledHome,
   TypewriterWrapper,
 } from "./style";
-import Logo from "components/Logo";
 
 const Home = (Home) => {
   return (
@@ -54,7 +53,9 @@ const Home = (Home) => {
                   "Designer.",
                   "Programmer.",
                   "Freelancer.",
-                ],
+                  "Open software enthusiast.",
+                  "Geek.",
+                ].sort(()=>0.5-Math.random()),
                 autoStart: true,
                 loop: true,
               }}
