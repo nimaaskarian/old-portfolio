@@ -42,7 +42,7 @@ const Navbar = ({ isMenu,toggleIsMenu,isDarkMode, toggleDarkMode }) => {
   return (
     <StyledNav>
       <HomeWrapper onClick={isMenu && toggleIsMenu}>
-        <StyledNavigationButton isHome={true}  to={home.path} enabled={true}><Logo size={1}/>
+        <StyledNavigationButton isHome={true}  to={home.path} enabled={true}><Logo size={30}/>
         </StyledNavigationButton>
         {!isScrolled && <StyledNavigationButton isHome={true} to={home.path} enabled={location.pathname === home.path}>{home.label}</StyledNavigationButton>}
       </HomeWrapper>

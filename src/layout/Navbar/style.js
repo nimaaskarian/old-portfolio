@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const StyledNav = styled.nav`
 padding: 20px 0;
@@ -13,6 +13,7 @@ display: flex;
 gap: 12px;
 justify-content: end;
 position: sticky;
+align-items: center;
 top: 0px;
 z-index: 1000;
 background-color: ${(props)=>props.theme.bgSecondary};
@@ -48,10 +49,11 @@ cursor: pointer;
   transition: opacity 0.6s ease;
   opacity: .55;
   display: block;
-  height: 24px;
+  height: 30px;
   &:hover {
     opacity: 1;
-  }`
+  }
+}`
 
 export const StyledNavigationButton = styled(Link)`
   font-family: raleway;

@@ -8,14 +8,14 @@ export const StyledHamburgerButton = styled.a`
   display: none;
   @media only screen and (max-width: 768px) {
     & {
-      display: inline;
+      display: flex;
     }
   }
   &:hover{
     opacity: 1;
   }
   & > svg {
-    height:1.5em;
+    height:30px;
     fill: ${(props)=>props.theme.primary}
   }
 `;

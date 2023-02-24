@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 export const StyledCircle = styled.span`
 display: inline-block;
-height: ${(props)=>(props.size)}em;
-width: ${(props)=>( props.size)}em;
+height: ${(props)=>(props.size)}px;
+width: ${(props)=>( props.size)}px;
 
-margin-right: ${(props)=>(props.margin??(-props.size/2))}em;
+margin-right: ${(props)=>(props.margin??(-props.size/2))}px;
 background-color: ${(props)=>props.theme[props.color]};
 border-radius: 50%;
 `
