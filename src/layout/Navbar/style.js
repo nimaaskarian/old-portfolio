@@ -50,6 +50,8 @@ cursor: pointer;
 }`
 
 export const StyledNavigationButton = styled(Link)`
+  display: flex;
+  justify-content: center;
   font-family: raleway;
   opacity: ${(props) => (props.enabled ? "1" : "0.55")};
   transition: opacity 0.6s ease;
