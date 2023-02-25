@@ -6,7 +6,7 @@ import { nord } from "themes";
 import { Route, Routes } from "react-router-dom";
 import { routes } from "constants";
 import Navbar from "./Navbar";
-import { MainContentWrapper, MainWrapper } from "./style";
+import { Root, MainContentWrapper, MainWrapper } from "./style";
 const Layout = () => {
   const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("dark-mode"));
   const [isMenu, setIsMenu] = useState(false)
@@ -21,25 +21,27 @@ const Layout = () => {
         <GlobalStyle isMenu={isMenu}/>
         {/* <Menu active={isMenuActive} toggleActive={toggleMenuActive} /> */}
         {/* <HamburgerButton onClick={toggleMenuActive} /> */}
-        <MainWrapper>
-          <Navbar
-            isMenu={isMenu} toggleIsMenu={toggleIsMenu}
-            isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}
-          />
-          <MainContentWrapper>
-            <Routes>
-              {routes.map((route) => {
-                return (
-                  <Route
-                    path={route.path}
-                    key={route.path}
-                    element={route.component}
-                    />
-                );
-              })}
-            </Routes>
-          </MainContentWrapper>
-        </MainWrapper>
+        <Root>
+          <MainWrapper>
+            <Navbar
+              isMenu={isMenu} toggleIsMenu={toggleIsMenu}
+              isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}
+              />
+            <MainContentWrapper>
+              <Routes>
+                {routes.map((route) => {
+                  return (
+                    <Route
+                      path={route.path}
+                      key={route.path}
+                      element={route.component}
+                      />
+                  );
+                })}
+              </Routes>
+            </MainContentWrapper>
+          </MainWrapper>
+        </Root>
       </ThemeProvider>
     </>
   );

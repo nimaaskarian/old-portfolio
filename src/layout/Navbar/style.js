@@ -3,12 +3,6 @@ import styled from "styled-components";
 
 export const StyledNav = styled.nav`
 padding: 20px 0;
-padding-top: 60px;
-@media only screen and (max-width: 768px) {
-  & {
-    padding-top: 20px;
-  }
-}
 display: flex;
 gap: 12px;
 justify-content: end;
@@ -71,6 +65,7 @@ export const StyledNavigationButton = styled(Link)`
   }`
 export const HomeWrapper = styled.span`
 display: flex;
+align-items: center;
 gap: 8px;
 margin-right:auto;
 `
