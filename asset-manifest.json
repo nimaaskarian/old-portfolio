@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/static/js/main.5509e1ce.js",
+    "static/media/nitab-scrsht.png": "/static/media/nitab-scrsht.db383c4258c91ff927b1.png",
+    "static/media/enigma-js-scrsht.png": "/static/media/enigma-js-scrsht.34e0f109229b880dded1.png",
+    "static/media/github.svg": "/static/media/github.383bf8dce8d0b4fd450950e532f14cf4.svg",
+    "static/media/sun-bright.svg": "/static/media/sun-bright.9ca2951713939bd9ffcec870b4b66ec6.svg",
+    "static/media/telegram.svg": "/static/media/telegram.1edd80ed745c8fffe798a75b56e30322.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.4453edb75aebf8d605ad318f54bbe370.svg",
+    "index.html": "/index.html",
+    "static/media/bars.svg": "/static/media/bars.9e310e9976e3cdf4ddc0e04f414d215b.svg",
+    "static/media/moon.svg": "/static/media/moon.e9c99e78511cc13c7bdd26f4a79c5249.svg",
+    "main.5509e1ce.js.map": "/static/js/main.5509e1ce.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5509e1ce.js"
+  ]
+}
