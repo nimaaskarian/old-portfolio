@@ -6,7 +6,7 @@ import { nord } from "themes";
 import { Route, Routes } from "react-router-dom";
 import { routes } from "constants";
 import Navbar from "./Navbar";
-import { Root, MainContentWrapper, MainWrapper } from "./style";
+import { StyledRoot, MainContentWrapper, MainWrapper } from "./style";
 const Layout = () => {
   const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("dark-mode"));
   const [isMenu, setIsMenu] = useState(false)
@@ -21,7 +21,7 @@ const Layout = () => {
         <GlobalStyle isMenu={isMenu}/>
         {/* <Menu active={isMenuActive} toggleActive={toggleMenuActive} /> */}
         {/* <HamburgerButton onClick={toggleMenuActive} /> */}
-        <Root>
+        <StyledRoot>
           <MainWrapper>
             <Navbar
               isMenu={isMenu} toggleIsMenu={toggleIsMenu}
@@ -41,7 +41,7 @@ const Layout = () => {
               </Routes>
             </MainContentWrapper>
           </MainWrapper>
-        </Root>
+        </StyledRoot>
       </ThemeProvider>
     </>
   );

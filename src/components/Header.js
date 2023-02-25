@@ -8,5 +8,5 @@ export const MainHeaderWrapper = styled.div`
 `;
 
 export const Header = styled.h2`
-  margin: 12px 0;
+  margin: 10px 0;
 `;

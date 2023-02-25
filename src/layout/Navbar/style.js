@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
-padding: 20px 0;
+padding: 15px 0;
 display: flex;
 gap: 12px;
 justify-content: end;
