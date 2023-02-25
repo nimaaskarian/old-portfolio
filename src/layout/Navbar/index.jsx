@@ -7,7 +7,7 @@ import { HomeWrapper, StyledNav,DarkModeButton, StyledNavigationButton, StyledMe
 import HamburgerButton from "./components/HamburgerIcon";
 import Logo from "components/Logo";
 
-const HOME_PATH="/portfolio"
+const HOME_PATH="/"
 const SCROLL_OFFSET=30
 const Navbar = ({ isMenu,toggleIsMenu,isDarkMode, toggleDarkMode }) => {
   const location = useLocation();
