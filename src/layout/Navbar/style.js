@@ -68,6 +68,6 @@ export const StyledNavigationButton = styled(Link)`
 export const HomeWrapper = styled.span`
 display: flex;
 align-items: center;
-gap: 5px;
+gap: 10px;
 margin-right:auto;
 `
