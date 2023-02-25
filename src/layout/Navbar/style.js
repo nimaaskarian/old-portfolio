@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StyledNav = styled.nav`
 padding: 15px 0;
 display: flex;
-gap: 12px;
+gap: 15px;
 justify-content: end;
 position: sticky;
 align-items: center;
@@ -19,7 +19,7 @@ export const StyledMenu = styled.nav`
   & > *{
     text-align: center;
   }
-  gap: 20px;
+  gap: 15px;
   height: 0;
   height: ${(props)=>props.enabled && "calc(100vh - 70px)"};
   display: flex;
@@ -68,6 +68,6 @@ export const StyledNavigationButton = styled(Link)`
 export const HomeWrapper = styled.span`
 display: flex;
 align-items: center;
-gap: 8px;
+gap: 5px;
 margin-right:auto;
 `

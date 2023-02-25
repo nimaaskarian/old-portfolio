@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const WorksWrapper = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
   & > * {
     flex-grow: 1;
